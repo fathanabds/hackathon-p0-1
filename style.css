@@ -144,7 +144,7 @@ body{
     width: 300px;
     /* height: 100%; */
     border-radius: 30px;
-    background: #fdfcfc;
+    /* background: #fdfcfc; */
     box-shadow: 0px 0px 5px #bebebe;
     margin:20px;
     padding: 20px;
@@ -181,17 +181,21 @@ body{
     font-family: sans-serif;
 }
 .harga{
-    padding: 10px;
+    padding: 20px;
+    padding-bottom: 5px;
+    padding-left: 5px;
     font-family: sans-serif;
-    height: 100px;
+    height: 60px;
+    text-align: left;
+    
     
 }
 .buttonDiList{
 
     display: grid;
-    align-items: flex-end;
-
-    margin-top: 80px;
+    align-items: center;
+    /* position: relative; */
+    margin-top: 20px;
     border-top: 1px solid #DADADA;
     /* width: 90%; */
 }
@@ -296,5 +300,13 @@ body{
   
   .button-82-pushable:focus:not(:focus-visible) {
     outline: none;
+  }
+  .desc{
+    height: 150px;
+    border-bottom: 1px solid rgb(211, 209, 209);
+  }
+  .desc p{
+    font-size: 20px;
+    text-align: left;
   }
   

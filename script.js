@@ -7,6 +7,9 @@ products.forEach(product =>{
   let makeDiv = document.createElement('div')
   makeDiv.className = 'product'
   makeDiv.innerHTML =`
+      <div class = imgHeader>
+        <img src = "img/a-simple-cloud-logo-or-icon-design-vector-removebg-preview (1).png"/>
+      </div>
       <div class = "productHeader">
           <label for = "proImg">${product.name}</label>
 

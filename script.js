@@ -35,4 +35,31 @@ let products = [
         `
     listProduct.appendChild(makeDiv)
   })
+  function updateProductDetails(index, updatedData) {
+    // Mengganti data produk yang ada dengan data baru
+    products[index] = {
+      ...products[index], 
+      ...updatedData     
+    };
+  
+    // Menghapus list produk yang lama dari DOM
+    productsList.innerHTML = '';
+  
+    // Menampilkan produk yang sudah diperbarui
+    products.forEach((product) => {
+      let makeDiv = document.createElement('div');
+      makeDiv.className = 'product';
+      makeDiv.innerHTML = 
+      // bagian html nya 
+  
+      productsList.appendChild(makeDiv);
+    });
+  }
+  
+  updateProductDetails(0, {
+    price: 50000, // Harga baru
+    desc: 'Spotify Premium sekarang dengan harga lebih murah!' // Deskripsi baru
+  });
+
+  
   

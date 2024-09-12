@@ -64,12 +64,16 @@ const addProductBtn = document.getElementById('add-product-btn');
 addProductBtn.addEventListener('click', (event) => {
   event.preventDefault();
 
-  products.push({
-    id: products.length === 0 ? 1 : products[products.length - 1].id + 1,
-    name: namaProduct.value,
-    price: Number(hargaProduct.value),
-    desc: descProduct.value,
-  });
+  if (!namaProduct.value || !hargaProduct.value || !descProduct.value) {
+    alert('Nama/Harga/Deskripsi Produk Tidak Boleh Kosong');
+  } else {
+    products.push({
+      id: products.length === 0 ? 1 : products[products.length - 1].id + 1,
+      name: namaProduct.value,
+      price: Number(hargaProduct.value),
+      desc: descProduct.value,
+    });
+  }
 
   renderProducts();
   console.log(products);

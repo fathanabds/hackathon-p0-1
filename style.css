@@ -236,11 +236,32 @@ table {
   padding-bottom: 20px;
   align-items: flex-start;
 }
+/* form add-product */
 
 .label {
   color: black;
-  
+  margin-left: 10px;
+  font-family: tahoma;
 }
 .input {
-  margin: 10px;
+  margin: 8px;
+  padding: 5px; 
+	border: solid 2px #493d3d; 
+  font-size: 13px;
+  font-family: tahoma;
+	width: 200px; 
+	background: #ebe9e9e8; 
+  height: 15px;
+  border-radius: 5px;
+}
+button {
+  width: auto; 
+  height: auto;
+	padding: 9px 9px; 
+	background: hsl(345deg 100% 47%); 
+	font-size: 15px; 
+	color: #FFFFFF; 
+  border-radius: 10px;
+  margin-left: 10px;
+  border: none;
 }

@@ -74,6 +74,8 @@ let products = [
   
    if (!namaProduct.value || !hargaProduct.value || !descProduct.value) {
     alert('Nama/Harga/Deskripsi Produk Tidak Boleh Kosong');
+  } else if (isNaN(hargaProduct.value)) {
+    alert('Harga Produk Harus Angka');
   } else {
     products.push({
       id: products.length === 0 ? 1 : products[products.length - 1].id + 1,

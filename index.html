@@ -7,6 +7,85 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="site-header">
+        <div class="site-identity">
+          <h1><a href="#" class = "adminPanel">Home</a></h1>
+          <h1><a href="#">Admin Panel</a></h1>
+        </div>  
+        <nav class="site-navigation">
+          <ul class="nav">
+            <li><a href="#">About</a></li> 
+            <li><a href="#">News</a></li> 
+            <li><a href="#">Contact</a></li> 
+          </ul>
+        </nav>
+    </header>
+    <!-- tulis html sesuai dengan fitur masing-masing di dalam tag body ini -->
+     <!-- list produk -->
+     <div id="listProduct"></div>
+     <!-- list produk -->
+     <!-- update product Alfin -->
+     <div id="modal-update-product" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span
+              class="close-button-modal"
+              onclick="handleCloseModalUpdateProduct()"
+              >&times;</span
+            >
+            <h2 class="modal-title">Update Form</h2>
+          </div>
+          <div class="modal-body">
+            <div>
+              <form id="form-update-product">
+                <label for="name">Product Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="product-name"
+                  placeholder="product name"
+                />
+                <label for="price">Product Price</label>
+                <input
+                  type="number"
+                  id="price"
+                  name="product-price"
+                  placeholder="product price"
+                />
+                <label for="description">Product Description:</label>
+  
+                <textarea
+                  id="description"
+                  name="description"
+                  rows="4"
+                  cols="50"
+                ></textarea>
+                <input type="submit" value="Submit" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- update product Alfin -->
+    <!-- awal add product -->
+    <div>
+      <form class = "formTambahProduk">
+        <div class = "boxTambahProduk boxNamaProduk">
+          <label for="NamaProduk" class="label">Nama Produk</label>
+          <input type="text" class="input" placeholder="Masukkan Produk" id="NamaProduk" />
+        </div>
+        <div class = "boxTambahProduk">
+          <label for="Harga" class="label">Harga</label>
+          <input type="text" class="input" placeholder="Masukkan Harga" id="Harga" />
+        </div>
+        <div class = "boxTambahProduk">
+          <label for="Deskripsi" class="label">Deskripsi Produk</label>
+          <input type="text" class="input" placeholder="Masukkan Deskripsi" id="Deskripsi" />
+        </div>
+        <button type="submit" id="add-product-btn">Tambah Produk</button>
+      </form>
+    </div>
+    <!-- akhir add-product -->
     <script src="script.js"></script>
   </body>
 </html>

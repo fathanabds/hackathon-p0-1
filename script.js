@@ -3,10 +3,6 @@ let products = [
   { name: 'Netflix', price: 60000, desc: 'Tonton film & acara TV Netflix secara online atau streaming langsung ke smart TV, konsol game, PC, Mac, ponsel, tablet, dan lainnya.' },
 ];
 
-const namaProduct = document.getElementById('namaProduct');
-const hargaProduct = document.getElementById('hargaProduct');
-const descProduct = document.getElementById('descProduct');
-const addProductBtn = document.getElementById('addProductBtn');
 // tulis script js sesuai dengan fitur masing-masing di bawah ini
 let productsList = document.getElementById('listProduct');
 products.forEach((product) => {
@@ -42,5 +38,20 @@ products.forEach((product) => {
   listProduct.appendChild(makeDiv);
 });
 
+// bagian add-product
+const namaProduct = document.getElementById('NamaProduk');
+const hargaProduct = document.getElementById('Harga');
+const descProduct = document.getElementById('Deskripsi');
+const addProductBtn = document.getElementById('add-product-btn');
 
+addProductBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  products.push({
+    name: namaProduct.value,
+    price: Number(hargaProduct.value),
+    desc: descProduct.value,
+  });
+  products = products;
+});
 
+console.log(products);

@@ -128,8 +128,76 @@ table {
   border-spacing: 0;
 }
 
-/* tulis style css sesuai dengan fitur masing-masing di bawah ini */
+/* tulis style css kalian di bawah ini */
+body {
+  margin: 40px;
+}
+.product img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+}
+.product {
+  width: 300px;
+  /* height: 100%; */
+  border-radius: 30px;
+  /* background: #fdfcfc; */
+  box-shadow: 0px 0px 5px #bebebe;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.productHeader {
+  height: 75.67px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border-bottom: 0.1px solid rgb(218, 218, 218);
+}
+.product label {
+  white-space: nowrap;
+  align-items: top;
+  font-size: 35px;
+  padding: 20px;
+  display: flex;
+  flex: 1;
+  font-family: serif;
+}
+#listProduct {
+  gap: 1rem;
+  border: 100px;
+  padding: 2rem;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+}
+.product p {
+  font-size: 25px;
+  font-family: sans-serif;
+}
+.harga {
+  padding: 20px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  font-family: sans-serif;
+  height: 60px;
+  text-align: left;
+  text-align: center;
+}
+.buttonDiList {
+  display: grid;
+  align-items: center;
+  /* position: relative; */
+  margin-top: 20px;
+  border-top: 1px solid #dadada;
+  /* width: 90%; */
+}
 .button-82-pushable {
+  margin-bottom: 10px;
   position: relative;
   border: none;
   background: transparent;
@@ -140,6 +208,87 @@ table {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+}
+
+.button-82-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+.desc {
+  height: 150px;
+  border-bottom: 1px solid rgb(211, 209, 209);
+}
+.desc p {
+  font-size: 20px;
+  text-align: left;
+  text-align: center;
+}
+.imgHeader img {
+  flex-shrink: 0;
+  /* padding-bottom: 50px; */
+  height: 100px;
+  margin-top: 0;
+  padding-top: 0;
+}
+.imgHeader {
+  display: grid;
+  justify-items: center;
+  height: 100px;
+  padding-bottom: 20px;
+  align-items: flex-start;
+}
+/* form add-product */
+
+.label {
+  color: black;
+  margin-left: 10px;
+  font-family: tahoma;
+}
+.input {
+  margin: 8px;
+  padding: 5px;
+  border: solid 2px #493d3d;
+  font-size: 13px;
+  font-family: tahoma;
+  width: 200px;
+  background: #ebe9e9e8;
+  height: 15px;
+  border-radius: 5px;
+}
+#add-product-btn {
+  width: auto;
+  height: auto;
+  padding: 9px 9px;
+  background: hsl(345deg 100% 47%);
+  font-size: 15px;
+  color: #ffffff;
+  border-radius: 10px;
+  margin-left: 10px;
+  border: none;
 }
 
 .button-82-shadow {
@@ -235,33 +384,4 @@ table {
   height: 100px;
   padding-bottom: 20px;
   align-items: flex-start;
-}
-/* form add-product */
-
-.label {
-  color: black;
-  margin-left: 10px;
-  font-family: tahoma;
-}
-.input {
-  margin: 8px;
-  padding: 5px; 
-	border: solid 2px #493d3d; 
-  font-size: 13px;
-  font-family: tahoma;
-	width: 200px; 
-	background: #ebe9e9e8; 
-  height: 15px;
-  border-radius: 5px;
-}
-button {
-  width: auto; 
-  height: auto;
-	padding: 9px 9px; 
-	background: hsl(345deg 100% 47%); 
-	font-size: 15px; 
-	color: #FFFFFF; 
-  border-radius: 10px;
-  margin-left: 10px;
-  border: none;
 }

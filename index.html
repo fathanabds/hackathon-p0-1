@@ -9,23 +9,26 @@
   <body>
     <!-- tulis html sesuai dengan fitur masing-masing di dalam tag body ini -->
     <div id="listProduct"></div>
+    <!-- awal add product -->
     <div>
       <form>
         <div>
           <label for="NamaProduk" class="label">Nama Produk</label>
-          <input type="text" class="input" placeholder="Masukkan Produk">
+          <input type="text" class="input" placeholder="Masukkan Produk" id="NamaProduk" />
         </div>
         <div>
           <label for="Harga" class="label">Harga</label>
-          <input type="text" class="input" placeholder="Masukkan Harga">
+          <input type="text" class="input" placeholder="Masukkan Harga" id="Harga" />
         </div>
         <div>
           <label for="Deskripsi" class="label">Deskripsi Produk</label>
-          <input type="text" class="input" placeholder="Masukkan Deskripsi">
+          <input type="text" class="input" placeholder="Masukkan Deskripsi" id="Deskripsi" />
         </div>
         <button type="submit" onclick="">Pilih Produk</button>
+        <button type="submit" id="add-product-btn">Pilih Produk</button>
       </form>
     </div>
+    <!-- akhir add-product -->
     <script src="script.js"></script>
   </body>
 </html>

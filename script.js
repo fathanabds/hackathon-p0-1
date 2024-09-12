@@ -27,7 +27,7 @@ let products = [
                 <span class="button-82-shadow"></span>
                 <span class="button-82-edge"></span>
                 <span class="button-82-front text">
-                    Pesan
+                    Delete
                 </span>
             </button>
         </div>
